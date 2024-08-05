@@ -59,7 +59,7 @@ def main(page: ft.Page):
                             padding=ft.padding.only(left=10, right=10, top=5, bottom=5),
                             alignment=ft.alignment.center_right,
                         ),
-                        ft.Icon(name=ft.icons.AUDIOTRACK, color=ft.colors.GREEN_400, size=30),
+                        ft.Icon(name=ft.icons.PERSON_3_ROUNDED, color=ft.colors.BLACK, size=30),
                     ],
                     alignment=ft.MainAxisAlignment.END,
                 )
@@ -72,7 +72,7 @@ def main(page: ft.Page):
             messages.controls.append(
                 ft.Row(
                     [
-                        ft.Image(src="https://img.freepik.com/premium-photo/beautiful-girl-avatar_984951-120.jpg", width=40, height=40, fit=ft.ImageFit.COVER),
+                        ft.Icon(name=ft.icons.PERSON_2, color=ft.colors.BLACK, size=30),
                         ft.Container(
                             content=ft.Column(
                                 [
