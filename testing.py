@@ -72,7 +72,7 @@ def main(page: ft.Page):
             messages.controls.append(
                 ft.Row(
                     [
-                        ft.Image(src="assets/woman.png", width=40, height=40, fit=ft.ImageFit.COVER),
+                        ft.Image(src="https://img.freepik.com/premium-photo/beautiful-girl-avatar_984951-120.jpg", width=40, height=40, fit=ft.ImageFit.COVER),
                         ft.Container(
                             content=ft.Column(
                                 [
