@@ -77,7 +77,7 @@ def main(page: ft.Page):
                             content=ft.Column(
                                 [
                                     ft.Container(
-                                        content=ft.Text(ai_response(user_message), size=14, width=180,color="#FFFFFF"),
+                                        content=ft.Text(ai_response(user_message)['response'], size=14, width=180,color="#FFFFFF"),
                                         padding=ft.padding.all(10),
                                         bgcolor="#000000",
                                         border_radius=12,
