@@ -59,7 +59,7 @@ def main(page: ft.Page):
                             padding=ft.padding.only(left=10, right=10, top=5, bottom=5),
                             alignment=ft.alignment.center_right,
                         ),
-                        ft.Image(src="man.png", width=40, height=40, fit=ft.ImageFit.COVER),
+                        ft.Icon(name=ft.icons.AUDIOTRACK, color=ft.colors.GREEN_400, size=30),
                     ],
                     alignment=ft.MainAxisAlignment.END,
                 )
