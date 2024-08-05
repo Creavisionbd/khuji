@@ -77,9 +77,9 @@ def main(page: ft.Page):
                             content=ft.Column(
                                 [
                                     ft.Container(
-                                        content=ft.Text(ai_response(user_message), size=14, width=150),
+                                        content=ft.Text(ai_response(user_message), size=14, width=150,color="#FFFFFF"),
                                         padding=ft.padding.all(10),
-                                        bgcolor="#b2b3ff",
+                                        bgcolor="#000000",
                                         border_radius=12,
                                     ),
                                     ft.Text("Chatbot", size=10, color="white"),
@@ -99,7 +99,7 @@ def main(page: ft.Page):
         hint_text="Type a message...",
         expand=True,
         on_submit=send_message,
-        bgcolor="white",
+        bgcolor="black",
         border_radius=20,
         text_align=ft.TextAlign.LEFT,
         height=50,
