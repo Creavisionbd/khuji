@@ -1,5 +1,14 @@
 import flet as ft
+import requests
 
+# Define the URL and the JSON body
+url = "https://khuji-ai.onrender.com/process-message"
+def ai_response(user_input):
+    data = {"message": user_input}
+
+    # Make the POST request
+    response = requests.post(url, json=data)
+    return response.json()
 def main(page: ft.Page):
     page.title = "Chatbot UI"
 
@@ -68,7 +77,7 @@ def main(page: ft.Page):
                             content=ft.Column(
                                 [
                                     ft.Container(
-                                        content=ft.Text(chatbot_response, size=14, width=150),
+                                        content=ft.Text(ai_response(user_message), size=14, width=150),
                                         padding=ft.padding.all(10),
                                         bgcolor="#b2b3ff",
                                         border_radius=12,
