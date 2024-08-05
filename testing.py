@@ -59,7 +59,7 @@ def main(page: ft.Page):
                             padding=ft.padding.only(left=10, right=10, top=5, bottom=5),
                             alignment=ft.alignment.center_right,
                         ),
-                        ft.Image(src="man.png", width=40, height=40, fit=ft.ImageFit.COVER),
+                        ft.Image(src="assets/man.png", width=40, height=40, fit=ft.ImageFit.COVER),
                     ],
                     alignment=ft.MainAxisAlignment.END,
                 )
@@ -72,7 +72,7 @@ def main(page: ft.Page):
             messages.controls.append(
                 ft.Row(
                     [
-                        ft.Image(src="woman.png", width=40, height=40, fit=ft.ImageFit.COVER),
+                        ft.Image(src="assets/woman.png", width=40, height=40, fit=ft.ImageFit.COVER),
                         ft.Container(
                             content=ft.Column(
                                 [
