@@ -48,7 +48,7 @@ def main(page: ft.Page):
                             content=ft.Column(
                                 [
                                     ft.Container(
-                                        content=ft.Text(user_message, size=14, width=180),
+                                        content=ft.Text(user_message, size=14),
                                         padding=ft.padding.all(10),
                                         bgcolor="#d87edb",
                                         border_radius=12,
@@ -59,7 +59,11 @@ def main(page: ft.Page):
                             padding=ft.padding.only(left=10, right=10, top=5, bottom=5),
                             alignment=ft.alignment.center_right,
                         ),
-                        ft.Icon(name=ft.icons.PERSON_3_ROUNDED, color=ft.colors.WHITE, size=30),
+                        ft.CircleAvatar(
+                            content=ft.Text("U"),
+                            color=ft.colors.BLACK,
+                            bgcolor="#FFFFFF",
+                        ),
                     ],
                     alignment=ft.MainAxisAlignment.END,
                 )
@@ -72,7 +76,11 @@ def main(page: ft.Page):
             messages.controls.append(
                 ft.Row(
                     [
-                        ft.Icon(name=ft.icons.PERSON_2, color=ft.colors.WHITE, size=30),
+                        ft.CircleAvatar(
+                            content=ft.Icon(name=ft.icons.PERSON_3_ROUNDED, color=ft.colors.PINK),
+                            color=ft.colors.BLACK,
+                            bgcolor="#FFFFFF",
+                        ),
                         ft.Container(
                             content=ft.Column(
                                 [
